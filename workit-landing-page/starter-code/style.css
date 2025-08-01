@@ -1,0 +1,475 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*CSS reset code*/
+
+/*Fonts that I used in this exercise*/
+@font-face {
+  font-family: Francues;
+  src: url(/workit-landing-page/starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+  font-family: Manrope;
+  src: url(/workit-landing-page/starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+/*Fonts that I used in this exercise*/
+
+/*Code for the web page body*/
+body{
+  width: 1440px;
+  font-size: 1rem;
+  font-family: Francues;
+}
+/*Code for the web page body*/
+
+/*Code for header*/
+header{
+  width: 1614px;
+  height: 40rem;
+  background-color: rgb(39, 7, 82);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0,0,0);
+  border-radius: 0% 10% 48% 50% / 10% 0% 10% 9%;
+}
+/*Code for header*/
+
+/*Code for the first link that is on the top right cornerc of web page*/
+.apply-link{
+  color: rgb(255,255,255);
+  font-size: 1.375rem;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(3, 255, 137);
+  text-underline-offset: 10px;
+  font-weight: 600;
+  font-family: Manrope;
+  float: right;
+  margin-right: 150px;
+  margin-top: 40px;
+}
+.apply-link:hover{
+ color:rgb(3, 255, 137);
+}
+/*Code for the first link that is on the top right cornerc of web page*/
+
+/*Code for the first image,its image on the top left corner,webkit logo*/
+.image-1 img{
+  margin-top: 40px;
+  margin-left: 160px;
+  margin-bottom: 30px;
+}
+/*Code for text of the header*/
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 80px;
+}
+.title-text-second-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 80px;
+  position: relative;
+  top: -40px; 
+}
+ /*Tailored is class name for span in middle of the text in header,for word tailored*/
+.tailored {
+    margin: 0 10px;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(3, 255, 137);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px; 
+  }
+  /*Tailored is class name for span in middle of the text in header,for word tailored*/
+
+ /*Code for text of the header*/
+
+ /*This is code for learn-link div,that is learn more link that you see in the header below text*/
+.learn-link p{
+  height: 60px;
+  width: 150px;
+  background-color: rgb(3, 255, 137);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: rgb(0,0,0);
+  font-family: Manrope;
+  font-weight: 700;
+}
+.learn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -90px;
+}
+.learn-link p:hover{
+  background-color: rgb(39, 7, 82);
+  transition: background-color 0.5s;
+  border: 2px solid rgb(3, 255, 137);
+  color: rgb(3, 255, 137);
+}
+/*This is code for learn-link div,that is learn more link that you see in the header below text*/
+
+/*Code for image that you see on left side of header*/
+.image-2 img{
+   margin-left: -150px;
+   margin-top: -250px;
+}
+/*Code for image that you see on left side of header*/
+
+/*Code for image that you see on right side of header*/
+.image-3 img{
+  float: right;
+  margin-right: -40px;
+  margin-top: -80px;
+}
+/*Code for image that you see on right side of header*/
+
+/*Code for phone image*/
+.image-4 img{
+  width: 520px;
+  height: 305px;
+  margin-left: 550px;
+  margin-top: 50px;
+}
+/*Code for phone image*/
+
+/*Code for the main section of the web page*/
+.about{
+  width: 1614px;
+  height: 42rem;
+  background-color: rgb(254, 250, 248);
+  border: 1px solid rgb(254, 250, 248);
+  border-radius: 0% 10% 48% 50% / 10% 0% 10% 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 220px;
+  word-spacing: 2px;
+}
+/*About class is contains basic code for main section of the web page*/
+
+/*This part of code is for the first column of main section of web page*/
+.first-about{
+  color: rgb(39, 7, 82);
+  font-weight: 400;
+  font-family: Manrope;
+  font-family: 26px;
+}
+.first-about-title{
+  color: rgb(39, 7, 82);
+  font-weight: 600;
+  font-family: Francues;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.first-number{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(254, 250, 248);;
+  color: rgb(39, 7, 82);
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Francues;
+  border: 1px solid rgb(39, 7, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+.first-about-text{
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data-1{
+  margin-left: 95px;
+}
+.data-2{
+  margin-left: 20px;
+}
+/*You probably understand this part of code,but you ask yourself:"Why do you have
+classes named data-2 or data-1,its because I named span classes like that so
+I can get right spacing for the text in this section,and you will this often till
+the footer*/
+/*This part of code is for the first column of main section of web page*/
+
+/*This part of code is for the second column of main section of web page*/
+.second-about{
+  color: rgb(39, 7, 82);
+  font-weight: 400;
+  font-family: Manrope;
+}
+.second-about-title{
+  color: rgb(39, 7, 82);
+  font-weight: 600;
+  font-family: Francues;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+.second-number{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(254, 250, 248);;
+  color: rgb(39, 7, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Francues;
+  border: 1px solid rgb(39, 7, 82);
+   margin-left: 220px;
+  margin-bottom: 50px;
+}
+.second-about-text{
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data-3{
+  margin-left: 20px;
+}
+.data-4{
+  margin-left: 5px;
+}
+/*This part of code is for the second column of main section of web page*/
+
+/*This part of code is for the third column of main section of web page*/
+.third-about{
+  color: rgb(39, 7, 82);
+  font-weight: 400;
+  font-family: Manrope;
+}
+
+.third-about-title{
+  color: rgb(39, 7, 82);
+  font-weight: 600;
+  font-family: Francues;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.third-number{
+   width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(254, 250, 248);;
+  color: rgb(39, 7, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Francues;
+  border: 1px solid rgb(39, 7, 82);
+  margin-left: 219px;
+  margin-bottom: 50px;
+}
+
+.third-about-text{
+  padding-left: 115px;
+  padding-right: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*This part of code is for the third column of main section of web page*/
+/*As you can see its all almost same code for this part of web page,
+maybe some small differences but its the same*/
+/*If you know basics of CSS you can understand code*/
+
+
+/*Code for the main article of this web page*/
+
+.article-founder{
+  width: 1614px;
+  height: 42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Code for the image of the founder that you see on main article
+of this web page*/
+
+.image-5 img{
+  width: 460px;
+  height: 460px;
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+/*Code for the image of the founder that you see on main article
+of this web page*/
+
+/*This content box containts image-6,link simmilar as header link and text*/
+
+.founder-box{
+  width: 800px;
+  height: 370px;
+  background-color: rgb(39, 7, 82);
+  color: rgb(255, 255, 255);
+  overflow: scroll;
+  padding: 50px;
+  margin-top: 340px;
+  margin-right: 230px;
+}
+
+/*Header of the founder-box class*/
+
+.founder-header{
+  font-size:  52px;
+  font-weight: 500;
+}
+
+/*Header of the founder-box class*/
+
+/*This contains code for the text below header*/
+
+.founder-content{
+  font-family: Manrope;
+  font-weight: 400;
+  margin-top: 30px;
+  color: rgb(223, 223, 223);
+  font-size: 22px;
+}
+
+/*This contains code for the text below header*/
+
+/*Link in founder box,simmilar as in header*/
+
+.founder-link p{
+  margin-top: 30px;
+  background-color: rgb(3, 255, 137);
+  font-size: 18px;
+  color: rgb(0,0,0);
+  font-family: Manrope;
+  font-weight: 700;
+  height: 65px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.founder-link p:hover{
+  background-color: rgb(39, 7, 82);
+  transition: background-color 0.5s;
+  border: 2px solid rgb(3, 255, 137);
+  color: rgb(3, 255, 137);
+}
+/*Link in founder box,simmilar as in header*/
+
+/*Code for the image in founder-box class,simmilar as pictures on the left and right side of the header*/
+
+.image-6 img{
+  float: right;
+  margin-top: -160px;
+  margin-left: 340px;
+  position: absolute;
+}
+/*Code for the image in founder-box class,simmilar as pictures on the left and right side of the header*/
+
+/*This content box containts image-6,link simmilar as header link and text*/
+
+
+/*This is basic code for icons in the footer of this web page*/
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 170px;
+  margin-top: 130px;
+}
+.footer-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 180px;
+  padding: 40px;
+}
+.icon-2{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*THE END*/
